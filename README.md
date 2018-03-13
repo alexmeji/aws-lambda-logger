@@ -2,7 +2,7 @@
 When you create your a AWS Lambda you need to have a good logger to view this logs in CloudWatch. This package has a debug and error logger.
 
 ## Installation
-`npm install awslambda-proxy-response --save`
+`npm install --save aws-lambda-logger`
 
 ## Example
 ```javascript
@@ -11,7 +11,7 @@ When you create your a AWS Lambda you need to have a good logger to view this lo
   exports.handler = (event, context, callback) => {
     // logger [debug] method needs at least 2 parameters
     // context and data (custom data to log)
-    logger.debug(context, {'data': 'Example});
+    logger.debug(context, {'data': 'Example'});
 
     // logger [error] method needs at least 2 parameters
     // context and error (error to trace)
