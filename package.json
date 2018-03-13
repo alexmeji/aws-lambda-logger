@@ -1,0 +1,27 @@
+{
+  "name": "aws-lambda-logger",
+  "version": "1.0.0",
+  "description": "AWS Lambda Logger for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmeji/aws-lambda-logger.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "aws-lambda",
+    "logger",
+    "serverless",
+    "nodejs"
+  ],
+  "author": "Alex Mejicanos",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/alexmeji/aws-lambda-logger/issues"
+  },
+  "homepage": "https://github.com/alexmeji/aws-lambda-logger#readme"
+}
