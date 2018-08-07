@@ -1,29 +1,28 @@
 'use strict'
 const debug = (context, data) => {
-  console.log(`[${context.functionName}] Start Logger`)
+  process.stdout.write(`[${context.functionName}] Start Logger` + '\n')
   let contextInfo = {
     'functionName': context.functionName,
     'memoryLimitInMB': context.memoryLimitInMB,
     'functionVersion': context.functionVersion,
+    'code': 10,
     'data': data
   }
-  console.log(JSON.stringify(contextInfo))
-  console.log(`[${context.functionName}] Finish Logger`)
+  process.stdout.write(JSON.stringify(contextInfo) + '\n')
+  process.stdout.write(`[${context.functionName}] Finish Logger` + '\n')
 }
 
 const error = (context, error) => {
-  console.log(`[${context.functionName}] Start Logger`)
+  process.stdout.write(`[${context.functionName}] Start Logger` + '\n')
   let contextInfo = {
     'functionName': context.functionName,
     'memoryLimitInMB': context.memoryLimitInMB,
-    'functionVersion': context.functionVersion
-  }
-  let errorInfo = {
+    'functionVersion': context.functionVersion,
+    'code': 50,
     'error': error
   }
-  console.log(JSON.stringify(contextInfo))
-  console.error(errorInfo)
-  console.log(`[${context.functionName}] Finish Logger`)
+  process.stdout.write(JSON.stringify(contextInfo) + '\n')
+  process.stdout.write(`[${context.functionName}] Finish Logger` + '\n')
 }
 
 module.exports = {
