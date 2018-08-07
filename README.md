@@ -1,6 +1,7 @@
 # AWS Lambda Logger
 When you create your a AWS Lambda you need to have a good logger to view this logs in CloudWatch. This package has a debug and error logger.
 
+
 ## Installation
 `npm install --save aws-lambda-logger`
 
